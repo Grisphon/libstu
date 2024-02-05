@@ -13,8 +13,8 @@ static unsigned int stu_strlen(const char *str)
 
 char *stu_strcat(char *str1, char *str2)
 {
-    int count;
-    int init_size;
+    unsigned int count;
+    unsigned int init_size;
 
     init_size = stu_strlen(str1);
     count = 0;
