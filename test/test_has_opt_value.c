@@ -12,6 +12,7 @@ Test(has_opt_value, normal_1) {
     argv1[1] = "-d";
     argv1[2] = "fed";
     cr_assert(eq(str, has_opt_value(argc1, argv1, 'd'), "fed"));
+    free(argv1);
 }
 
 Test(has_opt_value, normal_2) {
@@ -20,6 +21,7 @@ Test(has_opt_value, normal_2) {
     argv2[0] = "a.out";
     argv2[1] = "-d";
     cr_assert(eq(ptr, has_opt_value(argc2, argv2, 'd'), NULL));
+    free(argv2);
 }
 
 Test(has_opt_value, normal_3) {
@@ -29,4 +31,5 @@ Test(has_opt_value, normal_3) {
     argv3[1] = "-d";
     argv3[2] = "-f";
     cr_assert(eq(has_opt_value(argc3, argv3, 'd'), NULL));
+    free(argv3);
 }

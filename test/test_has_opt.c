@@ -11,6 +11,7 @@ Test(has_opt, normal_1) {
     argv1[0] = "a.out";
     argv1[1] = "-d";
     cr_assert(eq(has_opt(argc1, argv1, 'd'), 1));
+    free(argv1);
 }
 
 Test(has_opt, normal_2) {
@@ -18,6 +19,7 @@ Test(has_opt, normal_2) {
     char **argv1 = malloc(sizeof(char *) * 1);
     argv1[0] = "a.out";
     cr_assert(eq(has_opt(argc1, argv1, 'd'), 0));
+    free(argv1);
 }
 
 Test(has_opt, normal_3) {
@@ -27,4 +29,5 @@ Test(has_opt, normal_3) {
     argv1[1] = "-fd";
     argv1[2] = "-azdaz";
     cr_assert(eq(has_opt(argc1, argv1, 'd'), 1));
+    free(argv1);
 }

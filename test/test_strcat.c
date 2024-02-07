@@ -10,6 +10,7 @@ Test(stu_strcat, normal_1) {
     str1[3] = '\0';
     char *str2 = "def";
     cr_assert(eq(str, stu_strcat(str1, str2), "abcdef"));
+    free(str1);
 }
 
 Test(stu_strcat, normal_2) {
@@ -17,4 +18,5 @@ Test(stu_strcat, normal_2) {
     str1[0] = '\0';
     char *str2 = "def";
     cr_assert(eq(str, stu_strcat(str1, str2), "def"));
+    free(str1);
 }
