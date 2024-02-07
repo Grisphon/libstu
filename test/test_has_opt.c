@@ -24,7 +24,7 @@ Test(has_opt, normal_2) {
 
 Test(has_opt, normal_3) {
     int argc1 = 2;
-    char **argv1 = malloc(sizeof(char *) * 2);
+    char **argv1 = malloc(sizeof(char *) * 3);
     argv1[0] = "a.out";
     argv1[1] = "-fd";
     argv1[2] = "-azdaz";

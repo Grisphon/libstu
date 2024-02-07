@@ -4,16 +4,17 @@
 
 Test(stu_memset, with_int) {
     int *array = malloc(sizeof(int) * 3);
-    int *tarray = malloc(sizeof(int) * 3);
+    int i;
     array[0] = 5;
     array[1] = 12;
     array[2] = 1;
-    tarray[0] = 0;
-    tarray[1] = 0;
-    tarray[2] = 0;
-    cr_assert(eq(int[3], stu_memset(array, 0, (sizeof(int) * 3)), tarray));
+    stu_memset(array, 0, (sizeof(int) * 3));
+    i = 0;
+    while (i < 3) {
+        cr_assert(eq(i32, array[i], 0));
+        i += 1;
+    }
     free(array);
-    free(tarray);
 }
 
 Test(stu_memset, with_char) {

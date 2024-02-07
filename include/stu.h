@@ -1,6 +1,11 @@
 #ifndef STU_H
 #define STU_H
 
+void *stu_memset(void *ptr, char byte, unsigned int n);
+void *stu_memcpy(void *dest, const void *src, unsigned int n);
+void *arrset(void *array, const void *elem,
+             unsigned int elem_size, unsigned int n);
+void *stu_memmove(void *dest, const void *src, unsigned int n);
 unsigned int stu_strlen(const char *s);
 char *stu_strcpy(char *dest, const char *src);
 char *stu_strcat(char *dest, const char *src);

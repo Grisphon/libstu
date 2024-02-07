@@ -6,4 +6,5 @@ Test(stu_strdup, normal_1) {
     char *str_a = stu_strdup("feunard");
     str_a[0] = 'l';
     cr_assert(eq(str, str_a, "leunard"));
+    free(str_a);
 }

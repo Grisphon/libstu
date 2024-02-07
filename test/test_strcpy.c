@@ -13,5 +13,5 @@ Test(stu_strcpy, normal_2) {
     char *str1 = malloc(sizeof(char) * 5);
     char *str2 = "ziak";
     cr_assert(eq(str, stu_strcpy(str1, str2), "ziak"));
-    free(str2);
+    free(str1);
 }

@@ -12,7 +12,11 @@ SRCS =  src/atoi.c \
 	src/strcmp.c \
 	src/strcpy.c \
 	src/strdup.c \
-	src/strlen.c
+	src/strlen.c \
+	src/memset.c \
+        src/memcpy.c \
+        src/arrset.c \
+        src/memmove.c
 
 TEST = 	test/test_atoi.c \
 	test/test_has_opt.c \
@@ -24,7 +28,11 @@ TEST = 	test/test_atoi.c \
 	test/test_strcmp.c \
 	test/test_strcpy.c \
 	test/test_strdup.c \
-	test/test_strlen.c
+	test/test_strlen.c \
+	test/memset.c \
+        test/memcpy.c \
+        test/arrset.c \
+        test/memmove.c
 
 OBJS = $(SRCS:.c=.o)
 
