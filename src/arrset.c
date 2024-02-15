@@ -1,4 +1,4 @@
-#include "stu.h"
+#include "../include/stu.h"
 
 void *arrset(void *array, const void *elem,
              unsigned int elem_size, unsigned int n)
