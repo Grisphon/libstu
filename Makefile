@@ -16,7 +16,18 @@ SRCS =  src/atoi.c \
 	src/memset.c \
         src/memcpy.c \
         src/arrset.c \
-        src/memmove.c
+        src/memmove.c \
+	src/intarr.c \
+	src/vector_create.c \
+	src/vector_delete.c \
+	src/vector_destructor.c \
+	src/vector_erase_at.c \
+	src/vector_get.c \
+	src/vector_insert_at.c \
+	src/vector_pop_back.c \
+	src/vector_pop_front.c \
+	src/vector_push_back.c \
+	src/vector_push_front.c
 
 TEST = 	test/test_atoi.c \
 	test/test_has_opt.c \

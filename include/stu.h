@@ -1,6 +1,19 @@
 #ifndef STU_H
 #define STU_H
 
+struct intarr{
+    int *data;
+    unsigned int size;
+    unsigned int space;
+};
+
+struct intarr *intarr_create(unsigned int space);
+void intarr_delete(struct intarr *arr);
+int intarr_push(struct intarr *arr, int nb);
+int intarr_sum(struct intarr *arr);
+int intarr_avg(struct intarr *arr);
+void intarr_foreach(struct intarr *arr, void func(int nb));
+
 void *stu_memset(void *ptr, char byte, unsigned int n);
 void *stu_memcpy(void *dest, const void *src, unsigned int n);
 void *arrset(void *array, const void *elem,
