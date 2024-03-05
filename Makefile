@@ -27,7 +27,18 @@ SRCS =  src/atoi.c \
 	src/vector_pop_back.c \
 	src/vector_pop_front.c \
 	src/vector_push_back.c \
-	src/vector_push_front.c
+	src/vector_push_front.c \
+	src/print_base.c \
+        src/printf.c \
+        src/print_char.c \
+        src/print_int.c \
+        src/print_str.c \
+        src/print_perc.c \
+        src/print_x.c \
+        src/print_b.c \
+        src/print_o.c \
+        src/print_p.c \
+        src/flag_create.c\
 
 TEST = 	test/test_atoi.c \
 	test/test_has_opt.c \
@@ -43,7 +54,8 @@ TEST = 	test/test_atoi.c \
 	test/memset.c \
         test/memcpy.c \
         test/arrset.c \
-        test/memmove.c
+	test/test_printf.c \
+	test/memmove.c
 
 OBJS = $(SRCS:.c=.o)
 
