@@ -38,7 +38,13 @@ SRCS =  src/atoi.c \
         src/print_b.c \
         src/print_o.c \
         src/print_p.c \
-        src/flag_create.c\
+        src/flag_create.c \
+	src/capitalise.c \
+	src/perm.c \
+	src/mode_str.c \
+	src/strdupcat.c \
+	src/get_digit.c \
+	src/nb_len.c
 
 TEST = 	test/test_atoi.c \
 	test/test_has_opt.c \

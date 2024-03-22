@@ -30,5 +30,9 @@ int print_base10(int nb);
 int stu_puts(const char *s);
 int has_opt(int ac, char **av, char opt);
 char *has_opt_value(int ac, char **av, char opt);
+char *strdupcat(char *str1, char *str2);
+char *mode(char *path);
+int get_dig(int nb, int index);
+int nb_l(int nb);
 
 #endif
