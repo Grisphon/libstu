@@ -44,7 +44,12 @@ SRCS =  src/atoi.c \
 	src/mode_str.c \
 	src/strdupcat.c \
 	src/get_digit.c \
-	src/nb_len.c
+	src/nb_len.c \
+	src/split.c \
+	src/count_token.c \
+	src/strdup_token.c \
+	src/strlen_token.c \
+	src/sublen.c \
 
 TEST = 	test/test_atoi.c \
 	test/test_has_opt.c \

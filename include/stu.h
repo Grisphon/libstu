@@ -34,5 +34,10 @@ char *strdupcat(char *str1, char *str2);
 char *mode(char *path);
 int get_dig(int nb, int index);
 int nb_l(int nb);
+unsigned int count_token(const char *str, char token);
+char **split(const char *str, char token);
+char *stu_strdup_token(const char *arr, char token);
+unsigned int stu_strlen_token(const char *str, char token);
+unsigned int *sublen(const char *str, char token);
 
 #endif
